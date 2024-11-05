@@ -7,11 +7,11 @@ public class Main {
         Book book1 = new Book("Дюна", author1, 1963);
         Book book2 = new Book("Евнений Онегин", author2, 1833);
 
-        System.out.println(book1.toString());
-        System.out.println(book2.toString());
+        System.out.println(book1);
+        System.out.println(book2);
 
         book1.setYearPublication(1965);
 
-        System.out.println(book1.toString());
+        System.out.println(book1);
     }
 }
