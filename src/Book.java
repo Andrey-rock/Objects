@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Book {
     private final String title;
     private final Author author;
@@ -27,7 +29,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Книга " + title + ", автор " + author + ", год публикации " + yearPublication;
+        return "Книга " + title + ", автор " + author.toString() + ", год публикации " + yearPublication;
     }
 
     @Override
@@ -42,7 +44,7 @@ public class Book {
 
     @Override
     public int hashCode() {
-        return title.hashCode() + author.hashCode() + yearPublication;
+        return Objects.hash(title, author, yearPublication);
     }
 }
 
